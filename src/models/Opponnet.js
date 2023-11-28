@@ -1,5 +1,15 @@
+import createNewOpponentBall from '../services/createNewOpponentBall.js';
+
 class Opponent {
-  constructor() {}
+  #balls;
+
+  constructor() {
+    this.#balls = createNewOpponentBall();
+  }
+
+  getBalls() {
+    return this.#balls;
+  }
 }
 
 export default Opponent;
